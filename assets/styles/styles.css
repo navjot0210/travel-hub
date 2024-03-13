@@ -2,13 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
 
 :root {
-  --primary-color: #669ccb;
-  --primary-color-dark: #5681a7;
-  --secondary-color: #e8f1fa;
+  --primary-color: #3385ff;
+  --primary-color-dark: #4d95ff;
+  --secondary-color: #fafbfe;
   --text-dark: #282d31;
   --text-light: #767268;
-  --extra-light: #f3f4f6;
-
+  --extra-light: #fff;
   --max-width: 1200px;
 }
 
@@ -25,18 +24,18 @@
 }
 
 .section__title {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 500;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .section__subtitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: italic;
-  color: var(--primary-color);
-  margin-bottom: 5rem;
+  color: var(--text-dark);
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -48,12 +47,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* ------------------------------------------ */
+/* Header                                     */
+/* ------------------------------------------ */
+a img {
+  height: 4.5rem;
+}
+
 nav {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 2rem 1rem;
+  padding: 2.2rem 1rem;
   width: 100%;
   max-width: var(--max-width);
   display: flex;
@@ -82,16 +88,16 @@ nav {
 }
 
 .link:hover {
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
 }
 
 header {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(45, 92, 132, 0.5),
-      rgba(45, 92, 132, 0.5)
+    rgba(21, 25, 29, 0.7),
+    rgba(27, 32, 37, 0.7)
     ),
-    url("../img/travel-banner.jpg");
+    url("../img/banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +107,6 @@ header .section__container {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .header__content {
@@ -113,7 +118,7 @@ header .section__container {
 }
 
 .header__content h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-weight: 400;
   line-height: 5rem;
 }
@@ -122,22 +127,29 @@ header .section__container {
   text-align: center;
 }
 
-.header__content button {
-  padding: 1rem 2rem;
+button {
+  padding: 1.1rem 1.7rem;
   outline: none;
   border: none;
   border-radius: 5px;
   background-color: var(--primary-color);
   color: var(--extra-light);
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.header__content button:hover {
+button:hover {
   background-color: var(--primary-color-dark);
 }
 
+.header__content button {
+  margin-top: 22px;
+}
+
+/* ------------------------------------------ */
+/* Sections                                   */
+/* ------------------------------------------ */
 .journey__container {
   background-color: var(--secondary-color);
 }
@@ -145,11 +157,20 @@ header .section__container {
 .journey__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.7rem;
 }
 
 .country__card {
   background-color: var(--extra-light);
+  border-radius: 0.35rem;
+  box-shadow: 0.6rem 0.2rem 0.6rem 0.2rem  rgb(0 0 0 / 0.03);
+}
+
+.country__card img {
+  height: 280px;
+  background-color: var(--extra-light);
+  border-top-left-radius: 0.35rem;
+  border-top-right-radius: 0.35rem;
 }
 
 .country__name {
@@ -162,6 +183,53 @@ header .section__container {
   cursor: pointer;
 }
 
+.hotel-name {
+  display: flex;
+  padding: 1.3rem 1.7rem 0.5rem;
+}
+
+.hotel-name h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.hotel-name p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+}
+
+.rating {
+  margin: 0rem 1rem 0 6rem;
+}
+
+.hotel-name .rating p {
+  padding: 0 0.5rem;  
+  color: var(--text-dark);
+  background-color: #ffdf80;
+  border-radius: 0.35rem;
+}
+
+.hotel-detail i {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding-left: 1.7rem;
+}
+.hotel-detail span {
+  font-style: italic;
+  gap: 0.5rem;
+  color: var(--text-light);
+}
+.hotel-detail p {
+  font-size: 1.3rem;
+  padding: 1rem 1.7rem 1.7rem;
+  color: var(--text-light);
+}
+.hotel-detail button {
+  margin: 1rem 0 1.7rem 1.7rem;
+}
+
 .country__name i {
   font-size: 1.2rem;
 }
@@ -172,8 +240,8 @@ header .section__container {
 
 .banner__container {
   background-image: linear-gradient(
-      rgba(35, 71, 103, 0.5),
-      rgba(35, 71, 103, 0.5)
+      rgba(35 71 103 / 0.5),
+      rgba(35 71 103 / 0.5)
     ),
     url("../img/beaches.jpg");
   background-position: center center;
@@ -202,20 +270,16 @@ header .section__container {
 }
 
 .banner__content button {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--extra-light);
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.banner__content button:hover {
-  background-color: var(--primary-color-dark);
-}
 .display__container {
   background-color: var(--secondary-color);
 }
@@ -262,6 +326,9 @@ header .section__container {
   grid-area: 1/1/3/3;
 }
 
+/* ------------------------------------------ */
+/* Footer                                     */
+/* ------------------------------------------ */
 footer {
   background-color: var(--text-dark);
   color: var(--secondary-color);
@@ -295,6 +362,9 @@ footer p {
   font-style: italic;
 }
 
+/* ------------------------------------------ */
+/* Media Queries                              */
+/* ------------------------------------------ */
 @media (min-width: 640px) {
   .nav__links {
     display: flex;
@@ -305,7 +375,7 @@ footer p {
   }
 
   .header__content {
-    max-width: 400px;
+    max-width: 650px;
     align-items: flex-start;
   }
 
@@ -315,7 +385,7 @@ footer p {
 
   .journey__grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2.1rem;
   }
 
   .display__grid {
