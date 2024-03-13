@@ -24,18 +24,18 @@
 }
 
 .section__title {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 500;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .section__subtitle {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-style: italic;
-  color: var(--primary-color);
-  margin-bottom: 5rem;
+  color: var(--text-dark);
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -163,13 +163,14 @@ button:hover {
 .country__card {
   background-color: var(--extra-light);
   border-radius: 0.35rem;
-  box-shadow: 0.6rem 0.4rem 0.6rem  rgb(0 0 0 / 0.05);
+  box-shadow: 0.6rem 0.2rem 0.6rem 0.2rem  rgb(0 0 0 / 0.03);
 }
 
 .country__card img {
   height: 280px;
   background-color: var(--extra-light);
-  border-radius: 0.35rem;
+  border-top-left-radius: 0.35rem;
+  border-top-right-radius: 0.35rem;
 }
 
 .country__name {
@@ -184,28 +185,36 @@ button:hover {
 
 .hotel-name {
   display: flex;
-  padding: 1.3rem 1.3rem 0.5rem;
+  padding: 1.3rem 1.7rem 0.5rem;
 }
+
 .hotel-name h4 {
   font-size: 2rem;
   font-weight: 500;
   color: var(--text-dark);
 }
+
 .hotel-name p {
   font-size: 1.2rem;
-  padding-right: 1rem;
+  margin-top: 0.5rem;
   color: var(--text-light);
 }
+
+.rating {
+  margin: 0rem 1rem 0 6rem;
+}
+
 .hotel-name .rating p {
-  margin-left: 6.9rem;      /* */
+  padding: 0 0.5rem;  
   color: var(--text-dark);
-  background-color: var(--secondary-color);
+  background-color: #ffdf80;
   border-radius: 0.35rem;
 }
+
 .hotel-detail i {
   font-size: 1.5rem;
   color: var(--text-light);
-  padding-left: 1rem;
+  padding-left: 1.7rem;
 }
 .hotel-detail span {
   font-style: italic;
@@ -214,11 +223,11 @@ button:hover {
 }
 .hotel-detail p {
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 1rem 1.7rem 1.7rem;
   color: var(--text-light);
 }
 .hotel-detail button {
-  margin: 1rem 0 2rem 1.25rem;
+  margin: 1rem 0 1.7rem 1.7rem;
 }
 
 .country__name i {
