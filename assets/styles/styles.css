@@ -8,7 +8,6 @@
   --text-dark: #282d31;
   --text-light: #767268;
   --extra-light: #f3f4f6;
-
   --max-width: 1200px;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .section__title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--primary-color);
   margin-bottom: 1rem;
@@ -33,7 +32,7 @@
 }
 
 .section__subtitle {
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-style: italic;
   color: var(--primary-color);
   margin-bottom: 5rem;
@@ -91,10 +90,10 @@ nav {
 header {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(45, 92, 132, 0.5),
-      rgba(45, 92, 132, 0.5)
+    rgba(19 36 52 / 0.5),
+    rgba(20 31 40 / 0.5)
     ),
-    url("../img/travel-banner.jpg");
+    url("../img/banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,19 +124,19 @@ header .section__container {
   text-align: center;
 }
 
-.header__content button {
-  padding: 1rem 2rem;
+button {
+  padding: 1.1rem 1.7rem;
   outline: none;
   border: none;
   border-radius: 5px;
   background-color: var(--primary-color);
   color: var(--extra-light);
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.header__content button:hover {
+button:hover {
   background-color: var(--primary-color-dark);
 }
 
@@ -158,6 +157,11 @@ header .section__container {
   background-color: var(--extra-light);
 }
 
+.country__card img {
+  height: 280px;
+  background-color: var(--extra-light);
+}
+
 .country__name {
   padding: 2rem;
   text-align: left;
@@ -166,6 +170,45 @@ header .section__container {
   gap: 0.5rem;
   color: var(--text-light);
   cursor: pointer;
+}
+
+.hotel-name {
+  display: flex;
+  padding: 1.3rem 1.3rem 0.5rem;
+}
+.hotel-name h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.hotel-name p {
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  color: var(--text-light);
+}
+.hotel-name .rating p {
+  margin-left: 6.9rem;      /* */
+  color: var(--text-dark);
+  background-color: var(--secondary-color);
+  border-radius: 0.35rem;
+}
+.hotel-detail i {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding-left: 1rem;
+}
+.hotel-detail span {
+  font-style: italic;
+  gap: 0.5rem;
+  color: var(--text-light);
+}
+.hotel-detail p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: var(--text-light);
+}
+.hotel-detail button {
+  margin: 1rem 0 2rem 1.25rem;
 }
 
 .country__name i {
@@ -178,8 +221,8 @@ header .section__container {
 
 .banner__container {
   background-image: linear-gradient(
-      rgba(35, 71, 103, 0.5),
-      rgba(35, 71, 103, 0.5)
+      rgba(35 71 103 / 0.5),
+      rgba(35 71 103 / 0.5)
     ),
     url("../img/beaches.jpg");
   background-position: center center;
@@ -208,20 +251,16 @@ header .section__container {
 }
 
 .banner__content button {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--extra-light);
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.banner__content button:hover {
-  background-color: var(--primary-color-dark);
-}
 .display__container {
   background-color: var(--secondary-color);
 }
