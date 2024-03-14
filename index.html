@@ -19,43 +19,25 @@
         <link rel="icon" href="./assets/img/travelHub.png" type="image/x-icon">
     </head>
     <body>
-        <nav>
+        <nav class="container">
           <div class="nav__logo"><a href="#"><img src="./assets/img/head-logo.png"></a></div>
           <ul class="nav__links">
             <li class="link">Services</li>
             <li class="link">Blog</li>
             <li class="link">Offers</li>
             <li class="link">Contact Us</li>
-            <!--login-->
-            <div class="center">
-              <button id="show-login">Login</button>
-            </div>
-            <div class="popup">
-              <div class="close-btn">&times;</div>
-              <div class="form">
-                <h2>Log in</h2>
-                <div class="form-element">
-                  <label for="email">Email</label>
-                  <input type="text" id="email" placeholder="Enter email">
-                </div>
-                <div class="form-element">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" placeholder="Enter password">
-                </div>
-                <div class="form-element">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Remember me</label>
-                </div>
-                <div class="form-element">
-                  <button>Sign in</button>
-                </div>
-                <div class="form-element">
-                  <a href="#">Forgot password</a>
-                </div>
-              </div>
-            </div>
+            <li class="link open-button">Sign in</li>           
           </ul>
-        </nav>
+            <dialog class="modal" id="modal">
+              <h2>Sign in</h2>
+              <form class="form" method="dialog">
+                <label><i class="fa-solid fa-user"></i><input type="text" placeholder="Email"></label>
+                <label><i class="fa-solid fa-lock"></i><input type="text" placeholder="Password"></label>
+                <button class="button container" type="submit">Login</button>
+                <p class="new-account">New to TravelHub? <a href="#"><span class="new-link">Create Account</span></a></p>
+              </form>
+            </dialog>
+        </nav>    
         <header>
           <div class="section__container">
             <div class="header__content">
