@@ -80,13 +80,19 @@ body {
   display: block;
   margin-bottom: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: var(--primary-color);
 =======
+=======
+>>>>>>> 5d64860f1075242839e22fedfbe4f4e4b0f85b9a
   height: 40px;
   background-color: var(--primary-color);
   border-radius: 0.35rem;
   color: var(--extra-light);
+<<<<<<< HEAD
 >>>>>>> final-touches-navjot
+=======
+>>>>>>> 5d64860f1075242839e22fedfbe4f4e4b0f85b9a
 }
 
 .button-dialog:hover {
@@ -218,7 +224,7 @@ header .section__container {
   max-width: 570px;
 }
 
-.section__container a {
+.section__container a, input[type=button] {
   padding: 1.1rem 1.7rem;
 }
 
@@ -377,7 +383,6 @@ header .section__container {
 
 .banner p {
   margin-bottom: 20px;
-  
 }
 
 .blog {
