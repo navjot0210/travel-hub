@@ -168,6 +168,7 @@ nav {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -639,7 +640,7 @@ footer p {
   font-size: 15px;
 }
 
-.footer-contact ul li a i {
+.footer-contact i {
   color: var(--extra-light);
 }
 
@@ -656,9 +657,14 @@ footer p {
   list-style: none;
 }
 
-.footer-contact .list i {
-  font-size: 25px;
-  color: var(--extra-lights);
+.list {
+  color: #eff7fa;
+  font-size: 23px;
+}
+
+#copyright {
+  font-size: 20px;
+  margin-left: 900px;
 }
 
 .list ul li a i {
