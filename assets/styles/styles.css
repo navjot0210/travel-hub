@@ -6,6 +6,7 @@
   --primary-color-dark: #4d95ff;
   --secondary-color: #fafbfe;
   --text-dark: #282d31;
+  --light-grey: #f8f7f7;
   --text-light: #767268;
   --extra-light: #fff;
   --max-width: 1200px;
@@ -50,6 +51,86 @@ body {
 /* ------------------------------------------ */
 /* Header                                     */
 /* ------------------------------------------ */
+
+/* login */
+.modal {
+  padding: 1.5rem;
+  max-width: 60rem;
+  border: 0;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+/* extra styling */
+
+body {
+  min-height: 100vh;
+  margin: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--extra-light);
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+  font-weight: 700; 
+  display: block;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  gap: 1em;
+}
+
+label {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 300px;
+  background-color: var(--light-grey);
+}
+
+input {
+  padding-left: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  line-height: 40px;
+  background-color: var(--light-grey);
+}
+
+label i {
+  font-size: 15px;
+  padding-left: 5px;
+  color: var(--text-dark);
+}
+
+h2 {
+  margin-top: 6px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.new-account {
+  text-align: center;
+  text-decoration: none;
+}
+
+span.new-link {
+  color: #3385ff;
+  text-decoration: none;
+}
+
 a img {
   height: 4.5rem;
 }
