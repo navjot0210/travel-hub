@@ -53,6 +53,7 @@ body {
 /* ------------------------------------------ */
 
 /* login */
+
 .modal {
   padding: 1.5rem;
   max-width: 60rem;
@@ -126,6 +127,7 @@ h2 {
 .new-account {
   text-align: center;
   text-decoration: none;
+  color: var(--text-dark);
 }
 
 span.new-link {
@@ -212,7 +214,7 @@ header .section__container {
   max-width: 570px;
 }
 
-.section__container a {
+.section__container a, input[type=button] {
   padding: 1.1rem 1.7rem;
 }
 
@@ -360,11 +362,17 @@ header .section__container {
   flex-direction: column;
   gap: 1.5rem;
   color: var(--extra-light);
+  text-align: left;
 }
 
-.banner__content h2 {
+.banner h2 {
   font-size: 2rem;
   font-weight: 400;
+  text-align: left;
+}
+
+.banner p {
+  margin-bottom: 20px;
 }
 
 .blog {
