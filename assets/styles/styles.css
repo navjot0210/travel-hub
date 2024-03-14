@@ -79,21 +79,12 @@ body {
   font-weight: 700; 
   display: block;
   margin-bottom: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-color: var(--primary-color);
-=======
-=======
->>>>>>> 5d64860f1075242839e22fedfbe4f4e4b0f85b9a
-  height: 40px;
-  background-color: var(--primary-color);
-  border-radius: 0.35rem;
-  color: var(--extra-light);
-<<<<<<< HEAD
->>>>>>> final-touches-navjot
-=======
->>>>>>> 5d64860f1075242839e22fedfbe4f4e4b0f85b9a
-}
+
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 0.35rem;
+    color: var(--extra-light);
+  }
 
 .button-dialog:hover {
   background-color: var(--primary-color-dark);
@@ -362,13 +353,10 @@ header .section__container {
 
 .banner__container .section__container {
   padding: 10rem 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 .banner__content {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 1.5rem;
   color: var(--extra-light);
@@ -376,13 +364,16 @@ header .section__container {
 }
 
 .banner h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   text-align: left;
+  color: var(--extra-light);
 }
 
 .banner p {
   margin-bottom: 20px;
+  color: var(--extra-light);
+  
 }
 
 .blog {
@@ -744,7 +735,7 @@ footer p {
 
 @media (min-width: 786px) {
   .banner__container .section__container {
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .banner__content {
