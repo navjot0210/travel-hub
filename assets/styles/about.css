@@ -385,10 +385,4 @@
       margin-top: 1rem;
       width: 100%;
     }
-    .hotels {
-      grid-template-columns: minmax(2rem, 1fr);
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-  }
+    
