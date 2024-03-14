@@ -53,6 +53,7 @@ body {
 /* ------------------------------------------ */
 
 /* login */
+
 .modal {
   padding: 1.5rem;
   max-width: 60rem;
@@ -86,6 +87,7 @@ body {
   font-weight: 700; 
   display: block;
   margin-bottom: 20px;
+  background-color: var(--primary-color);
 }
 
 form {
@@ -124,6 +126,7 @@ h2 {
 .new-account {
   text-align: center;
   text-decoration: none;
+  color: var(--text-dark);
 }
 
 span.new-link {
@@ -354,11 +357,18 @@ header .section__container {
   flex-direction: column;
   gap: 1.5rem;
   color: var(--extra-light);
+  text-align: left;
 }
 
-.banner__content h2 {
+.banner h2 {
   font-size: 2rem;
   font-weight: 400;
+  text-align: left;
+}
+
+.banner p {
+  margin-bottom: 20px;
+  
 }
 
 .blog {
