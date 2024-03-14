@@ -774,3 +774,46 @@ footer p {
     font-size: 1rem;
   }
 }
+
+/* For tablets */
+@media only screen and (max-width: 1024px) {
+  .journey__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .country__card {
+    margin-bottom: 2rem;
+  }
+
+  .hotel-name {
+    padding: 1rem;
+  }
+
+  .hotel-name h4 {
+    font-size: 1.8rem;
+  }
+
+  .hotel-name p {
+    font-size: 1rem;
+  }
+
+  .hotel-detail {
+    padding: 1rem;
+  }
+
+  .hotel-detail i {
+    font-size: 1.2rem;
+  }
+
+  .hotel-detail span {
+    font-size: 1rem;
+  }
+
+  .hotel-detail p {
+    font-size: 1rem;
+  }
+
+  .hotel__detail a {
+    padding: 0.7rem;
+  }
+}
