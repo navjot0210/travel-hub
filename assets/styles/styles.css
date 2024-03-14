@@ -73,36 +73,37 @@ body {
 
 /* extra styling */
 
-body {
-  min-height: 100vh;
-  margin: 2rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: var(--extra-light);
-}
-
-.button {
+.button-dialog {
   border: 0;
   cursor: pointer;
   font-weight: 700; 
   display: block;
   margin-bottom: 20px;
+<<<<<<< HEAD
   background-color: var(--primary-color);
+=======
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 0.35rem;
+  color: var(--extra-light);
+>>>>>>> final-touches-navjot
 }
 
-form {
+.button-dialog:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.modal form {
   display: grid;
   gap: 1em;
 }
 
-label {
-  border: 1px solid black;
-  border-radius: 2px;
+.modal label {
   width: 300px;
   background-color: var(--light-grey);
 }
 
-input {
+.modal input {
   padding-left: 5px;
   font-size: 18px;
   line-height: 20px;
@@ -110,7 +111,7 @@ input {
   background-color: var(--light-grey);
 }
 
-label i {
+.modal label i {
   font-size: 15px;
   padding-left: 5px;
   color: var(--text-dark);
@@ -121,6 +122,10 @@ h2 {
   margin-bottom: 15px;
   font-size: 30px;
   text-align: center;
+}
+
+.new-account {
+  color: var(--text-dark);
 }
 
 .new-account {
@@ -169,6 +174,7 @@ nav {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -212,8 +218,11 @@ header .section__container {
   max-width: 570px;
 }
 
-.section__container a, input[type=button] {
+.section__container a {
   padding: 1.1rem 1.7rem;
+}
+
+.section__container a, input[type=button] {
   outline: none;
   border: none;
   border-radius: 5px;
@@ -619,44 +628,66 @@ form textarea:focus {
 }
 
 .social-apps ul li a i:hover {
-  color: #0067ff;
   transform: translateY(-5px);
+}
+
+.social-apps ul li a i:hover, .list ul li a i:hover {
+  color: #0067ff;
 }
 
 /* ------------------------------------------ */
 /* Footer                                     */
 /* ------------------------------------------ */
 footer {
-  background-color: var(--text-dark);
-  color: var(--secondary-color);
+  background-color: #19191a;
 }
 
-footer .section__container {
-  display: grid;
-  gap: 1.5rem;
-  text-align: center;
-}
-
-footer h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.social__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social__icons i {
-  padding: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
+.footer-contact {
+  height: 100px;
+  background-color: #19191a;
 }
 
 footer p {
-  font-style: italic;
+  color: var(--extra-light);
+  line-height: 100px;
+  font-size: 15px;
+}
+
+.footer-contact i {
+  color: var(--extra-light);
+}
+
+.list {
+  height: 100%;
+}
+
+.list ul {
+  gap: 10px;
+}
+
+.list ul li {
+  line-height: 100px;
+  list-style: none;
+}
+
+.list {
+  color: #eff7fa;
+  font-size: 23px;
+}
+
+#copyright {
+  font-size: 20px;
+  margin-left: 900px;
+}
+
+.list ul li a i {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.row.flex {
+  flex-wrap: wrap;
 }
 
 /* ------------------------------------------ */
